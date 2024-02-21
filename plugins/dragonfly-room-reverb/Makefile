@@ -80,7 +80,8 @@ LINK_OPTS += -lm
 # --------------------------------------------------------------
 # Enable all possible plugin types
 
-TARGETS = jack lv2_sep vst2 vst3 clap
+PLUGIN_FORMATS = jack lv2 vst2 vst3 clap
+TARGETS = $(patsubst lv2,lv2_sep,$(PLUGIN_FORMATS))
 
 all: $(TARGETS)
 
