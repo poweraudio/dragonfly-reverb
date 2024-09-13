@@ -1,3 +1,13 @@
+**PowerAudio fork of Dragonfly Reverb**
+
+This fork of Dragonfly Reverb has the following changes:
+
+* The set of compiled plugin formats (LV2, VST, etc.) is configurable by
+  overriding the `PLUGIN_FORMATS` variable when invoking `make`.
+* Updated DPF, which includes a fix for VST 3 on PowerPC.
+
+---
+
 # [Dragonfly Reverb](https://michaelwillis.github.io/dragonfly-reverb/)
 Dragonfly Reverb is a bundle of free audio effects for Linux, MacOS, and Windows. 
 
